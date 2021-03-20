@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "592822747272",
+    "project_id": "yanapay-412bd",
+    "storage_bucket": "yanapay-412bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592822747272:android:68108db5762a4365d1df3d",
+        "android_client_info": {
+          "package_name": "com.example.yanapay_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592822747272-r8fglsbuntgurrg72dhqdklm05mp6lg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADFKnL98fvT4i1nVQSTuR-7ZjST1OFyy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592822747272-r8fglsbuntgurrg72dhqdklm05mp6lg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
