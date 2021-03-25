@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:yanapay_app/src/ui/pages/auth_page.dart';
 import 'package:yanapay_app/src/ui/pages/home_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
  
 class MyApp extends StatelessWidget {
   @override
@@ -16,6 +21,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white
       ),
       home: AuthPage()
+      // home: HomePage()
     );
   }
 }

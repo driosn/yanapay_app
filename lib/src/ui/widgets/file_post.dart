@@ -1,15 +1,17 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
-class MainPost extends StatelessWidget {
+class FilePost extends StatelessWidget {
   
   String mProfileImage;
-  String mPostImage;
+  File mPostImage;
   String mDescription;
   String mName;
   
-  MainPost({
+  FilePost({
+    this.mPostImage,
     this.mProfileImage = "https://lh3.googleusercontent.com/ogw/ADGmqu8kAPERL-6ysEhU-VMqYMynXAFpV8eyHYKMVPnBWw=s64-c-mo",
-    this.mPostImage = "https://img.culturacolectiva.com/content/2016/11/bache-2-high.jpg",
     this.mDescription = "Por favor, denuncio la calle Sanabria esquina Perez, hay un bache que no permite la circulación correcta de las personas.",
     this.mName = "David Rios"
   });
@@ -18,7 +20,6 @@ class MainPost extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -62,7 +63,7 @@ class MainPost extends StatelessWidget {
             margin: const EdgeInsets.only(top: 6),
             height: 200,
             width: double.infinity,
-            child: Image.network(mPostImage, fit: BoxFit.cover),
+            child: Image.file(mPostImage, fit: BoxFit.cover),
           )
         ],
       ),   

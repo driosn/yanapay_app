@@ -31,6 +31,10 @@ dependencies:
   flushbar:
   rxdart:
   flutter_signin_button:
+  image_picker:
+  cloud_firestore:
+  firebase_core:
+  firebase_storage:
 
 dev_dependencies:
   flutter_test:

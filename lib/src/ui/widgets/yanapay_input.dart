@@ -5,15 +5,18 @@ class YanapayInput extends StatelessWidget {
   String mHint;
   Function(String) mOnChanged;
   bool mPassword = false;
+  TextEditingController mController;
 
   YanapayInput({
     @required this.mHint,
     @required this.mOnChanged,
+    this.mController
   });
 
   YanapayInput.password({
     @required this.mHint,
-    @required this.mOnChanged
+    @required this.mOnChanged,
+    this.mController
   }) {
     mPassword = true;
   }
@@ -21,6 +24,7 @@ class YanapayInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: mController,
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12)
